@@ -1,0 +1,58 @@
+﻿@model F.Web.Models.DbApplyRequest
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DbRideRequest</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Filled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeStartCareer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeStartCareer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountTraums)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountTraums)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
